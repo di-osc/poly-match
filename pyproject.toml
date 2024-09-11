@@ -28,5 +28,5 @@ tests = [
 
 [tool.maturin]
 python-source = "python"
-module-name = "poly_match.core"
+module-name = "poly_match_rs.core"
 features = ["pyo3/extension-module"]

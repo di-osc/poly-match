@@ -253,8 +253,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "poly-match"
-version = "0.1.2"
+name = "poly-match-rs"
+version = "0.1.3"
 dependencies = [
  "ndarray",
  "ndarray-linalg",
