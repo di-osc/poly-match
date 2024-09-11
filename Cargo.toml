@@ -1,0 +1,15 @@
+[package]
+name = "poly-match"
+version = "0.1.2"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "poly_match_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+ndarray = {version = "0.15.6"}
+ndarray-linalg = "0.16.0"
+numpy = "0.21.0"
+pyo3 = { version = "0.21", features = ["extension-module", "macros"] }
