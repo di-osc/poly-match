@@ -2,6 +2,7 @@ from jsonargparse import CLI
 from .baseline import main as baseline_main
 from .v0 import main as v0_main
 from .v1 import main as v1_main
+from .v2 import main as v2_main
 from rich.live import Live
 from rich.table import Table
 from rich.console import Console
@@ -22,6 +23,8 @@ def benchmark():
         table.add_row("v0", f"{v0_took * 1000:.2f}", f"{baseline_took / v0_took:.2f}")
         v1_took = v1_main()
         table.add_row("v1", f"{v1_took * 1000:.2f}", f"{baseline_took / v1_took:.2f}")
+        v2_took = v2_main()
+        table.add_row("v2", f"{v2_took * 1000:.2f}", f"{baseline_took / v2_took:.2f}")
 
 
 def main():
