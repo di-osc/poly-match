@@ -8,6 +8,11 @@ edition = "2021"
 name = "poly_match_rs_core"
 crate-type = ["cdylib"]
 
+[profile.release]
+debug = true       # Debug symbols for our profiler.
+lto = true         # Link-time optimization.
+codegen-units = 1  # Slower compilation but faster code. 
+
 [dependencies]
 ndarray = {version = "0.15.6"}
 ndarray-linalg = "0.16.0"
